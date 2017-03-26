@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
+import { Hero } from './hero';
 
-export class Hero {
-  id: number;
-  name: string;
-}
 
 const HEROES: Hero[] = [
   { id: 11, name: 'Mr. Nice' },
@@ -30,8 +27,8 @@ export class AppComponent {
 
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
+    console.log('In the click event method');
   }
-  
 }
 
 
